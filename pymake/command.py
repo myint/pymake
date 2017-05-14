@@ -9,9 +9,11 @@ structure, environment, and working directory. Typically they will all share a p
 except when a submake specifies -j1 when the parent make is building in parallel.
 """
 
+from __future__ import absolute_import
+
 import os, subprocess, sys, logging, time, traceback, re
 from optparse import OptionParser
-import data, parserdata, process, util
+from . import data, parserdata, process, util
 from pymake import errors
 
 # TODO: If this ever goes from relocatable package to system-installed, this may need to be

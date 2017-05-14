@@ -1,4 +1,6 @@
 # Basic commands implemented in Python
+
+from __future__ import absolute_import
 import errno, sys, os, shutil, time
 from getopt import getopt, GetoptError
 

@@ -1,7 +1,8 @@
+from __future__ import absolute_import
 from __future__ import print_function
 
 import logging, re, os
-import data, parser, util
+from . import data, parser, util
 from pymake.globrelative import hasglob, glob
 from pymake import errors
 

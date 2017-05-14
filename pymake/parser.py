@@ -33,8 +33,10 @@ token, tokenoffset, afteroffset *may be None*. That means there is more text
 coming.
 """
 
+from __future__ import absolute_import
+
 import logging, re, os, sys
-import data, functions, util, parserdata
+from . import data, functions, util, parserdata
 from pymake import errors
 
 _log = logging.getLogger('pymake.parser')

@@ -2,6 +2,8 @@
 Skipping shell invocations is good, when possible. This wrapper around subprocess does dirty work of
 parsing command lines into argv and making sure that no shell magic is being used.
 """
+
+from __future__ import absolute_import
 from __future__ import print_function
 
 #TODO: ship pyprocessing?
@@ -11,10 +13,10 @@ import site
 from collections import deque
 # XXXkhuey Work around http://bugs.python.org/issue1731717
 subprocess._cleanup = lambda: None
-import command, util
+from . import command, util
 from pymake import errors
 if sys.platform=='win32':
-    import win32process
+    from . import win32process
 
 _log = logging.getLogger('pymake.process')
 

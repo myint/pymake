@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import pymake.data, pymake.parser, pymake.parserdata, pymake.functions
 import unittest
 import logging

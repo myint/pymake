@@ -6,6 +6,8 @@ make.py
 A drop-in or mostly drop-in replacement for GNU make.
 """
 
+from __future__ import absolute_import
+
 import sys, os
 import pymake.command, pymake.process
 

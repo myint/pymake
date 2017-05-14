@@ -2,6 +2,8 @@
 # make file "source." It essentially verifies to to_source() functions
 # scattered across the tree.
 
+
+from __future__ import absolute_import
 import glob
 import logging
 import os.path

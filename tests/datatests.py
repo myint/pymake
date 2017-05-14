@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import pymake.data, pymake.functions, pymake.util
 import unittest
 import re

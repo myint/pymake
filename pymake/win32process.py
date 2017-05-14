@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from ctypes import windll, POINTER, byref, WinError, WINFUNCTYPE
 from ctypes.wintypes import HANDLE, DWORD, BOOL
 
